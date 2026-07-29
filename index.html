@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Biblio Z'Ilà</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styless.css">
+<link rel="shortcut icon" href="file_00000000262861f5b895366cf6858522.png" type="image/x-icon">
+</head>
+<body>
+
+<nav>
+  <h1>Biblio Z'Ilà</h1>
+  <div>
+    <a href="index.html">Accueil</a>
+    <a href="#gallerie">Facebook</a>
+  </div>
+</nav>
+
+
+<section class="slider">
+<div class="slide active" style="background-image:url('slide1.png')"><a href="histoire.html"></a></div>
+<div class="slide" style="background-image:url('slide2.png')"><a href="serie.html"></a></div>
+<div class="slide" style="background-image:url('slide3.png')"><a href="histoire.html"></a></div>
+</section>
+
+
+
+<div class="container" id="acceuil">
+
+
+  <h2>Bienvenue dans Biblio Z'Ilà</h2>
+  <p class="subtitle">Bienvenue sur Biblio Z'ilà, votre bibliothèque numérique. <br>
+    Vous pouvez télécharger gratuitement plusieurs livres, découvrir les séries de 
+    lecture de Biblio Z'ilà et consulter des documents <br>d'Instruction Civique de Vie (ICV). 
+    Notre objectif est de rendre les connaissances accessibles à tous.
+  </p>
+<br><br>
+  <div class="cards">
+    <a href="histoire.html" class="card">
+      <span>📖</span>
+      <h3>Histoires</h3>
+      <p>Tous les livres d'histoire ce trouve ici</p>
+    </a>
+
+    <a href="serie.html" class="card">
+      <span>🎬</span>
+      <h3>Séries</h3>
+      <p>Tous les sagas de série ce trouve ici</p>
+    </a>
+
+    <a href="icv.html" class="card">
+      <span>📚</span>
+      <h3>ICV</h3>
+      <p>Tous les livres de l'éducation ce trouve ici</p>
+    </a>
+  </div>
+
+
+<!-- ============================================= -->
+
+
+</div>
+<br>
+<section class="gallery" id="gallerie">
+<div class="track">
+<img src="un.png"><img src="deux.png"><img src="trois.png">
+<img src="slide1.png"><img src="cinq.png"><img src="six.png">
+<img src="sept.png"><img src="neuf.png"><img src="slide2.png">
+<img src="dix.png"><img src="huit.png">
+</div>
+</section>
+
+<section class="facebook">
+
+<h2>Suivez-nous</h2>
+
+<a href="https://web.facebook.com/profile.php?id=61591876771662" target="_blank">
+
+
+
+Notre Page Facebook
+
+</a>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Biblio Z'ilà | Avec <i>OVO campagny</i>
+
+</p>
+
+</footer>
+<script>
+const slides=document.querySelectorAll('.slide');
+let i=0;
+setInterval(()=>{
+slides[i].classList.remove('active');
+i=(i+1)%slides.length;
+slides[i].classList.add('active');
+},4000);
+</script>
+</body>
+</html>
